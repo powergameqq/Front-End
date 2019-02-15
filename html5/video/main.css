@@ -1,0 +1,36 @@
+#skin{
+	border:3px dashed steelblue;
+	border-radius: 10px;
+	width:700px;
+	text-align: center;
+	padding: 15px 0px;
+	margin: 50px auto;
+}
+
+/*#playButton{}*/
+/*#fullButton{}*/
+section{
+	margin-top: 15px;
+	/*border: 1px solid blue;*/
+}
+button{
+	text-transform: capitalize;
+	width: 50px;
+}
+#buttons{
+	/*border: 1px solid red;*/
+	width: 120px;
+	float: left;
+}
+#defaultBar{
+	border: 1px solid #aaa;
+	width: 560px;
+	height: 16px;
+	padding: 2px;
+	float: left;
+}
+#progressBar{
+	width: 0px;
+	height: 16px;
+	background: tomato;
+}

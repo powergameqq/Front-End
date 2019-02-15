@@ -1,0 +1,23 @@
+body{
+	font: 110% Tahoma,Verdana,Arial;
+	background: #ccc;
+}
+form{
+	background: #fff;
+	width: 200px;
+	padding: 15px;
+	border: 1px solid #bbb;
+}
+legend,input[type="submit"]{
+	text-transform: capitalize;
+}
+label{
+	text-transform: capitalize;
+}
+#theForm div{
+	margin: 5px 0px;
+}
+p{
+	font-size: 14px;
+	color: steelblue;
+}

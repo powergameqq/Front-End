@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.3.1.min.js"></script>		
+		<script>
+			$(document).ready(function(){
+				//動態偵測螢幕上的XY座標
+				/*
+				$('.textHover').mousemove(function(e){
+					$('#theDiv').text('X:'+e.pageX + ' Y:' +e.pageY).show();
+				});     */
+
+				$('.textHover').mousemove(function(e){
+					var theText = $(this).attr('hovertext');
+
+					$('#theDiv').text(theText).show().css({
+						left:e.pageX +10,
+						top:e.pageY+10,
+					});
+				}).mouseout(function(){
+					$('#theDiv').hide();
+				});
+			});			
+		</script>
+	</head>
+	<body>
+	  	<p>
+			<a href="http://www.google.com.tw" class="textHover" hovertext="Google, a powerful search engine.">Google</a> | 
+			<a href="http://www.cafepress.com/" class="textHover" hovertext="cafepress is the world's best online gift shop.">cafepress</a> | 
+			<a href="http://www.bbc.com/news" class="textHover" hovertext="BBC Trust publishes response to public consultation.">BBC</a>
+		</p>
+		<p>
+			<img src="../images/limes.jpg" class="textHover" hovertext="Very fresh limes...">
+		</p>
+		<div id="theDiv"></div>
+	</body>
+</html>

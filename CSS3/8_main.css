@@ -1,0 +1,20 @@
+/**{
+	margin:0px;
+	padding: 0px;
+	list-style:none;
+}
+*/
+
+#circle:hovor{
+	
+	width:200px;
+	height:200px;
+
+
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.pic{
+	border-radius: 50%;
+}

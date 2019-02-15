@@ -1,0 +1,30 @@
+@font-face{
+	font-family: facebook; /*自行命名*/
+	src:url(fonts/facebook-letter-faces.ttf);
+}
+
+#box p{
+	border:1px solid #3D579D;
+	font:bold 40px facebook,Tahoma,Arial;
+	width:250px;
+	height:100px;
+	margin:100px auto;
+	text-align: center;
+	line-height: 100px;
+	color:#3D579D;
+	
+	transition:width 5s,transform 3s,background 3s,color 3s,font-size 3s;
+	/*transform:skewX(30deg);*/
+	/*transform:scale(1,0.8);*/
+	/*transform:rotate(30deg);*/
+	/*transform:translate(100px,50px);	*/
+
+}
+
+#box p:hover{
+	width: 400px;
+	transform:rotate(360deg);
+	background: #3D579D;
+	color:#fff;
+	font-size: 50px;
+}

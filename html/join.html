@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Join Me</title>
+</head>
+<body>
+	<h1>加入會員</h1>
+
+	<form action="" method="get" accept-charset="utf-8">
+		姓名:<input type="text" name="name" required><br>
+		密碼:<input type="password" name="pw" required maxlength="12" minlength="3"><br>
+		性別:<input type="radio" name="gender" value="M" checked>男
+		     <input type="radio" name="gender" value="F">女
+		     <input type="radio" name="gender" value="S" disabled>秘密<br>
+		興趣:<input type="checkbox" name="interest" value="" checked>閱讀
+		     <input type="checkbox" name="interest" value="">籃球
+		     <input type="checkbox" name="interest" value="">羽球
+		     <input type="checkbox" name="interest" value="">看電視
+		     <input type="checkbox" name="interest" value="">做菜<br>
+		
+		
+
+		<table>
+			<tr>
+				<td>
+				<fieldset>
+				<legend>性別:</legend>
+				<input type="radio" name="gender" value="M" checked>男
+			    <input type="radio" name="gender" value="F">女
+			    <input type="radio" name="gender" value="S" disabled>秘密<br>
+				</fieldset>		
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<fieldset>
+						<legend>興趣:</legend>
+						<input type="checkbox" name="interest" value="" checked>閱讀
+					    <input type="checkbox" name="interest" value="">籃球
+					    <input type="checkbox" name="interest" value="">羽球
+					    <input type="checkbox" name="interest" value="">看電視
+					    <input type="checkbox" name="interest" value="">做菜<br>
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+
+		
+
+
+		血型: <select name="Blood Type">
+				<option value="A">A</option>
+				<option value="B">B</option>
+				<option value="AB">AB</option>
+				<option value="O">O</option>
+			  </select><br>
+
+
+		留言: <textarea name="talk" id="" cols="37" rows="5">關於...</textarea><br>
+
+
+		
+		搜尋關鍵字: <input type="search" name="search"><br>
+		電子信箱: <input type="email" name="email" placeholder="xxx@xxx.com"><br>
+
+
+		<input type="submit" value="確認">
+		<input type="reset" value="清除">
+		<input type="button" value="裝飾用按鈕">
+		<button>豪華大按鈕</button>
+
+
+	</form>
+</body>
+</html>

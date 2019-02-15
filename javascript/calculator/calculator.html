@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript--calculator</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="new.js"></script>
+</head>
+<body>
+	<form id="theForm">
+		<fieldset>
+			<legend>calculator</legend>
+			<div>
+				<label for="quantity">quantity: </label>
+				<input type="number" name="quantity" id="quantity" min="0">
+			</div>
+			<div>
+				<label for="price">price per unit: </label>
+				<input type="text" id="price" name="price">
+			</div>
+			<div>
+				<label for="tax">text rate(%): </label>
+				<input type="text" id="tax" name="tax">
+			</div>
+			<div>
+				<label for="discount">discount: </label>
+				<input type="text" id="discount" name="discount">
+			</div>
+			<div>
+				<label for="total">total: </label>
+				<input type="text" id="total" name="total">
+			</div>
+			<div>
+				<input type="submit" value="calculate" id="calculate">
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

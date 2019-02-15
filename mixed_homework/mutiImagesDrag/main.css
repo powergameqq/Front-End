@@ -1,0 +1,40 @@
+#dropzone{
+	border: 3px solid tomato;
+	width: 400px;
+	height: 600px;
+	padding: 40px 10px;
+	overflow:hidden;
+	margin: 10px;
+
+}
+img{
+	max-width: 800px;
+	
+	min-width: 50px;
+	
+	
+}
+
+section{
+	margin: 50px auto;
+	width: 640px;
+	
+}
+
+div{
+	float:left;
+}
+
+
+button{
+	margin: 10px;
+	text-transform: capitalize;
+	font: bolder 15px  Verdanal;
+	color: tomato;
+	border:3px solid tomato;
+	width:100px;
+	background-color: white;
+	border-radius: 15px;
+	
+}
+

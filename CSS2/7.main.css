@@ -1,0 +1,12 @@
+
+		div{font:bold 70px Comic Sans MS;
+				color: steelblue;
+				position: absolute;
+				top: 200px;
+				left: 200px;
+				z-index: 2}
+	
+	body{
+		background-image: url(../images/bg003.gif);
+	}
+

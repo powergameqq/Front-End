@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>session storage</title>
+</head>
+<body>
+	<button onclick="showMessage();">show storage</button>
+
+	<script>
+		function showMessage(){
+			if(sessionStorage['book']==null){
+				var title = prompt('What is the book title?');
+				sessionStorage['book'] = title;
+			}else{
+				alert(sessionStorage['book']);
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/facebox.css">	
+		
+		<script src="js/jquery-3.3.1.min.js"></script>		
+		<script src="js/facebox.js"></script>
+		<title>jQuery plugin -- Adipoli</title>
+		<script>
+			$(document).ready(function(){
+				$('.image').facebox({
+					opacity      : 0.2,
+      				overlay      : true,
+					closeImage   : '../images/closelabel.png',
+
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<a href="../images/washDrawing/015.JPG" class="image">瑜珈老師</a>
+		<a href="../images/washDrawing/049.JPG" class="image">瓶中信</a>
+	</body>
+</html>

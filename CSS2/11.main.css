@@ -1,0 +1,24 @@
+
+
+
+
+#myId1{		
+	font:bold 70px Comic Sans MS;
+	position: absolute;
+	color: steelblue;
+	top: 200px;
+	left: 200px;
+	z-index: 2}
+
+#myId2{		
+	font:bold 70px Comic Sans MS;
+	position: absolute;
+	color: #aaa;
+	top: 201px;
+	left: 202px;
+	z-index: 3}
+	
+body{
+		background-image: url(../images/bg003.gif);
+	}
+

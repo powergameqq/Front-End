@@ -1,0 +1,55 @@
+/**{
+	margin:0px;
+	padding: 0px;
+	list-style:none;
+}
+*/
+
+#box{
+	border:1px solid red;
+	font:bold 40px Tahoma;
+	width:350px;
+	height:100px;
+	margin:50px auto;
+	text-align: center;
+	line-height: 100px;
+	
+	box-shadow:rgba(255,0,0,0.3) 20px 10px, blue 10px 20px;
+	text-shadow: rgba(255,0,0,0.1) 10px 10px 5px; 
+}
+
+#box2{
+	border: 1px solid red;
+	font: bold 40px Tahoma;
+	width: 250px;
+	margin: 50px auto;
+	padding: 10px;
+	text-align: center;
+
+	box-shadow: red 30px 0px inset;
+}
+
+#box3{
+	border: 1px solid green;
+	font: bold 40px Tahoma;
+	width: 300px;
+	margin: 50px auto;
+	text-align: center;
+
+	
+}
+
+#box3 p:nth-child(1){
+		color: #FFF;
+		text-shadow: red 0px 0px 5px;
+}
+#box3 p:nth-child(2){
+	color: #FFF;
+	text-shadow: red 0px 0px 5px,blue 0px 0px 5px;
+}
+#box3 p:nth-child(3){
+	color: #FFF;
+	text-shadow: rgba(255,0,0,0.6) 0px -10px 15px;
+}
+
+

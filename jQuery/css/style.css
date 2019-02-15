@@ -1,0 +1,62 @@
+/*6_addClass + 7 */
+.highlight{
+	background-color: yellow;
+
+}
+
+.textHover{
+	cursor = pointer;
+}
+
+#theDiv{
+	border:1px solid #ccc;
+	font:12px Tahoma;
+	color:#666;
+	padding:5px;
+	background: #fff;
+
+	position: absolute;
+	display: none;
+}
+
+
+
+
+/*16*/
+
+#topMessage{
+	background: #666;
+	color: white;
+	font:20px Tahoma;
+	width: 600px;
+	margin: 0px auto; 
+	text-align: center;
+	padding: 10px 0px;
+
+	display: none;
+}
+
+/*18*/
+
+.myPhoto{
+	width: 100px;
+	/*height: 100px;*/
+}
+#imgBoard{
+	width: 100px;
+	background: #aaa;
+	padding: 10px 30px;
+
+	position: absolute;
+	left: -130px;
+}
+
+
+/*27*/
+#inCenter{
+	width: 200px;
+	height: 200px;
+	background: #ccc;
+	
+	position: absolute;
+}

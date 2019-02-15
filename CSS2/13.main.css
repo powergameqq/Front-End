@@ -1,0 +1,11 @@
+div{
+	font:70px Comic Sans MS;
+}
+
+.myClass{
+	text-decoration: underline;
+}
+
+#myId{
+	background: #ccc;
+}

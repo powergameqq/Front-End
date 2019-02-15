@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.3.1.min.js"></script>		
+		<script>
+			$(document).ready(function(){
+				// $('input[type="email"]').attr('placeholder','Enter your name');
+				// $('input[type="email"]').attr().focus().blur();
+				// $('input[type="email"]').attr().focus(function(){}).blur(function(){});
+				$('input[type="email"]').attr('placeholder','Enter your name').focus(function(){
+					$(this).attr('placeholder','');
+				}).blur(function(){
+					if($(this).val() == ''){
+						$(this).attr('placeholder','example@icloud.com');
+
+					}
+
+				});
+
+			});			
+		</script>
+	</head>
+	<body>
+	  <form>
+		<p>
+			<label for="name">username : </label>
+			<input type="text" name="name" id="name" placeholder="your name">
+		</p>
+		<p>
+			<label for="email">email : </label>
+			<input type="email" name="email" id="email">
+		</p>
+		<p>
+			<label>confirm email : </label>
+			<input type="email">
+		</p>
+		<input type="submit" value="Submit">
+	  </form>
+	</body>
+</html>

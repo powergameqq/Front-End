@@ -1,0 +1,28 @@
+/**{
+	margin:0px;
+	padding: 0px;
+	list-style:none;
+}
+*/
+
+#box{
+	border:1px solid red;
+	font:bold 40px Tahoma;
+	width:250px;
+	height:100px;
+	margin:50px auto;
+	text-align: center;
+	line-height: 100px;
+	
+	color:#fff;
+	text-shadow: red 0px 0px 5px;
+
+	/*background: yellow;*/
+	/*background: radial-gradient(blue,red);*/
+	/*background: -webkit-linear-gradient(left top,red,orange,yellow,green,blue,indigo,violet);*/
+	background: -webkit-repeating-radial-gradient(left,ellipse,blue 10%,green 20%);
+	
+
+
+}
+

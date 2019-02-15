@@ -1,0 +1,30 @@
+fieldset{
+
+	border-style: solid;
+	border-color: #EAF5F8;
+	border-width: 2px;
+	margin-right: 10px;
+	font-weight: bold;
+	
+}
+
+body{
+	font-family:Arial;
+}
+
+legend{
+	color:#03109E;
+}
+
+input{
+	border-style: solid;
+	border-top-color: #818395;
+	border-left-color: #5A5D74;
+	border-bottom-color: #8B8FD8;
+	border-right-color: #7B81D3;
+	border-width: 2px;
+	background:#E3F2F7;
+	width:250px;
+
+}
+

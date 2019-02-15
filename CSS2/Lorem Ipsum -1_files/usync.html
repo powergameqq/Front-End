@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://s.komoona.com/sync/usync.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Komoona</title>
+        
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./kmn-cs.js.下載" async="true" type="text/javascript"></script></head>
+    <body marginwidth="0" marginheight="0">
+        <script type="text/javascript">
+            var tInterval = null;
+            // add javascript elment to page
+            function asyncJs(src) {
+                // create script element
+                var script = document.createElement("script");
+
+                // set attributes
+                var attributes = {async: true, type: 'text/javascript', src: src};
+                for (var attr in attributes) {
+                    script.setAttribute(attr, attributes[attr]);
+                }
+
+                // append to body
+                var body = document.getElementsByTagName('body')[0];
+                if (body) {
+                    body.appendChild(script);
+                }
+
+                return script;
+            }
+
+            // implement JSON.stringify serialization
+            function stringify(obj) {
+                if (window.JSON && window.JSON.stringify) {
+                    return window.JSON.stringify(obj);
+                } else {
+                    return obj;
+                }
+            }
+            // get stored user cookies
+            function getCookies() {
+                var cookies = {}, pairs = document.cookie.split(";");
+                for (var i = 0; i < pairs.length; i++) {
+                    var pair = pairs[i].split('='), key = pair.splice(0, 1)[0].trim();
+                    cookies[key] = unescape(pair);
+                }
+                window.console.log("kcookies=[" + stringify(cookies) + "]");
+                return cookies;
+            }
+            function cookieSync(alreadySync) {
+                window.console.log("kcookieSync[" + alreadySync +"]");
+                // timer until kmn_sa script is loaded. Once loaded call its cookie sync option
+                if (!window.kmn_sa && !tInterval) {
+                    // push kmn_sa.js to page and call cookie sync
+                    asyncJs('//cdn.komoona.com/scripts/kmn_sa.js');
+                    tInterval = window.setInterval(
+                            function () {
+                                cookieSync(alreadySync);
+                            },
+                            100);
+                } else {
+                    if (window.kmn_sa) {
+                        window.clearInterval(tInterval);
+                        window.kmn_sa.cookieSync('p', {cs: alreadySync, type: 'iframe'});
+                    }
+                }
+            }
+            (function () {
+                try {
+                    /* console shim*/
+                    var f = function () {};
+                    if (!window.console) {
+                        window.console = {
+                            log: f, info: f, warn: f, debug: f, error: f
+                        };
+                    }
+
+                    // check for Komoona.com cookies
+                    var cookies = getCookies();
+                    if (!cookies.hasOwnProperty('kmnpid')) {
+                        // always sync a user with no cookie. 
+                        cookieSync(false);
+                    } else {
+                        // if the user does have a cookie, sync some proportion
+                        var rand = Math.random();
+                        if (rand > 0.65) {
+                            cookieSync(true);
+                        }
+                    }
+                } catch (e) {
+                    window.console.log(e.message);
+                }
+            })();
+        </script><script async="true" type="text/javascript" src="./kmn_sa.js.下載"></script>
+    
+
+<iframe id="kmnpid" width="0" height="0" style="position:absolute;top:-20000px" src="./user_sync.html" marginheight="0" marginwidth="0" frameborder="0" scrolling="no"></iframe></body></html>

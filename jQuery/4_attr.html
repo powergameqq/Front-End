@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// $(':submit,input[type="email"]').click(function(){
+			// 	alert("hi~");
+			// 	});
+
+			// $(':submit').click(function(){
+			// 	var ans = $(this).attr('value');
+			// 	alert(ans);
+			// })
+
+			$(':submit').click(function(){
+				 $(this).attr('value','Please wait.....');
+			});
+			
+			$('a').click(function(){
+				 $(this).attr('href','https://tw.yahoo.com');
+			});
+
+			$('textarea').click(function(){
+				 // $(this).attr('rows',5).attr('cols',25);
+				 $(this).attr({
+				 	rows:5,
+				 	cols:25,
+				 });
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<input type="text" value="123">
+	<input type="submit" value="Submit">
+	<input type="submit" value="Submit">
+	<input type="email">
+	<a href="https:www.google.com">Google</a>
+	<p>
+		<textarea></textarea>
+	</p>
+</body>
+</html>

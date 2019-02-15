@@ -1,0 +1,16 @@
+/**{
+	margin:0px;
+	padding: 0px;
+	list-style:none;
+}
+*/
+
+#box p{
+	
+	font:bold 60px Tahoma;
+	opacity:0.5;
+
+	-webkit-box-reflect:below 10px -webkit-linear-gradient(transparent 30%, rgba(0,0,0,0.5));
+
+}
+

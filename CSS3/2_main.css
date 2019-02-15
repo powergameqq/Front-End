@@ -1,0 +1,41 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+h1,h3,p{
+	margin: 5px;
+}
+
+#box{
+	border: 1px solid red;	
+}
+
+/*p[name="peter"]{
+	background: #aaa;
+}*/
+
+input[type="submit"],input[type="reset"],input[type="button"],button{
+	width:80px;
+	text-transform: capitalize;
+}
+
+/*a:link,a:visited,a:active{
+	color:#777;
+}*/
+
+/*a[href*="google.com"]{
+	background:maroon;
+}*/
+
+/*a[herf^="https://"]{
+	background: maroon;
+}*/
+
+/*a[herf$=".pdf"]{
+	background: maroon;
+}*/
+
+p:nth-child(odd){
+	background: #aaa;
+}

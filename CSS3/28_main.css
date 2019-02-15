@@ -1,0 +1,26 @@
+@keyframes slide{
+	/*0%{margin-left: 0px}
+	20%{margin-left: 100px}
+	40%{margin-left: 300px}
+	60%{margin-left: 500px}
+	80%{margin-left: 800px}
+	100%{margin-left: 1000px}*/
+	0%,100%{margin-left: 0px;}
+	50%{margin-left: 400px;}
+}
+
+div{
+	width: 200px;
+	height: 200px;
+	background: #ccc;
+	margin: 10px;
+	
+	font:bold 50px Tahoma;
+	text-align: center;
+	line-height: 200px;
+
+}
+div:nth-child(1){animation:slide 1s 0s 3 alternate;}
+div:nth-child(2){animation:slide 1s 0.5s 3 alternate;}
+div:nth-child(3){animation:slide 1s 1s 3 alternate;}
+div:nth-child(4){animation:slide 1s 1.5s 3 alternate;}

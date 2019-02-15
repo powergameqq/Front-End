@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.3.1.min.js"></script>			
+		<script>
+			$(document).ready(function(){
+				var textMax = 70;
+					$('#feedback').html('<sapn style="color:red;">'+ textMax +'</span> characters remaining.');
+
+				$('#talk').keyup(function(){
+					// var yourText = $(this).val();
+					var textLength = $(this).val().length;
+					var textRemaining = textMax - textLength;
+
+					$('#feedback').html('<sapn style="color:red;">'+ textRemaining +'</span> characters remaining.');
+
+				});
+			});			
+		</script>
+		<title>jQuery</title>
+	</head>
+	<body>
+		<form>
+			<textarea id="talk" rows="5" cols="25" maxlength="70"></textarea>
+			<p id="feedback"></p>
+		</form>
+	</body>
+</html>

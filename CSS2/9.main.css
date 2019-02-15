@@ -1,0 +1,28 @@
+
+div{
+	font:bold 70px Comic Sans MS;
+	position: absolute;
+}
+
+
+
+
+.myClass1{		
+	
+	color: steelblue;
+	top: 200px;
+	left: 200px;
+	z-index: 2}
+
+.myClass2{		
+	
+
+	color: #aaa;
+	top: 201px;
+	left: 202px;
+	z-index: 3}
+	
+body{
+		background-image: url(../images/bg003.gif);
+	}
+

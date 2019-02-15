@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- <link rel="stylesheet" href="29_main.css">	 -->
+		<style>
+			p{
+				margin: 20px auto;
+			}
+		</style>
+		<script src="js/jquery-3.3.1.min.js"></script>		
+		<script src="js/jquery.adipoli.min.js"></script>
+		<title>jQuery plugin -- Adipoli</title>
+		<script>
+			$(document).ready(function(){
+				$('img').adipoli({
+					'startEffect' : 'overlay',
+					'hoverEffect' : 'sliceup',
+					'slices'      :  5,
+					'overlayText' : '這是甚麼',
+					'textColor'   : '#f00',
+					'popOutMargin': 3,
+					'popOutShadow': 10,
+					});
+			});
+		</script>
+	</head>
+	<body>
+		<p>
+		<img src="../images/washDrawing/032.JPG">
+		</p>
+	</body>
+</html>

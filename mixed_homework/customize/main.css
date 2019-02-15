@@ -1,0 +1,59 @@
+#canvas{
+	margin-top: 419px;
+	margin-left: 700px;
+	z-index:1;
+	background-color:transparent;
+	position: absolute;
+}
+
+
+#outermost{
+	text-align:center;
+	border:10px solid tomato;
+	border-radius: 25px;
+	width:900px;
+	padding:20px;
+	z-index:2;
+	position: absolute;
+	
+}
+
+#myVideo{
+	border:4px dashed tomato;
+	
+}
+
+section{
+	margin: 0px auto;
+
+	width: 640px;
+}
+
+#defaultBar{
+	margin: 0px;
+	width: 635px;
+	height: 16px;
+	padding: 2px;
+	border: 1px solid tomato;
+	
+}
+#progressBar{
+	
+	width: 0px;
+	height: 16px;
+	background: tomato;
+}
+
+button{
+	margin-top:2px;
+	text-transform: capitalize;
+	font: bolder 15px  Verdanal;
+	color: tomato;
+	border:1px solid tomato;
+	width:60px;
+	background-color: white;
+	float: left;
+
+	
+}
+
